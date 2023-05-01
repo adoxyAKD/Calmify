@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+
+                android:text="Welcome to Calmify"
+                android:textColor="@color/purple_200"
+                android:textSize="34sp"
+                android:textStyle="bold|italic" />
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/id_installedAppList"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_bakground"
+                        android:text="installed app list"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/id_FloatingButtonPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_bakground"
+                        android:text="Floating Widget"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/id_NotePage"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_bakground"
+                        android:text="Go for notes"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/id_PrayerPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_bakground"
+                        android:text="Go for Prayers"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                    <Button
+                        android:id="@+id/id_webViewPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/custom_bakground"
+                        android:text="Go for WebView"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

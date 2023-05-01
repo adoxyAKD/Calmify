@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Calmify</string>
+    <string name="client_id">289069566447-g9ivuc94115v740mapi5ldpqjk652jav.apps.googleusercontent.com</string>
+
+
+    <string name="facebook_app_id">430123122083661</string>
+    <string name="fb_login_protocol_scheme">fb430123122083661</string>
+    <string name="facebook_client_token">ffa1cab58288f57f480b107946f4e927</string>
+
+
+    <string name="accessibility_service_description">Calmify App uses an accessibility service to determine which app is currently on, and to be able to draw a lock screen over it. None of your information is shared or saved by this service.</string>
+    <string name="service_alert">Calmify App runs using an accessibility service. Please enable Calmify App in your settings.</string>
+    <string name="service_alert_button">Enable Service</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

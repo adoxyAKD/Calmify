@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.calmify">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <queries> <!-- in order to get the app list -->
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Calmify">
+        <activity
+            android:name=".ScreenOverlayFLoatingWidget.myFloatingWidget"
+            android:exported="false"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name=".LOCK_APPS_PAGE.installedAppListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WEBVIEW_PAGE.webviewAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".WEBVIEW_PAGE.getDataHtmlActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".WEBVIEW_PAGE.htmlActivity"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".WEBVIEW_PAGE.AndroidGetData"
+            android:exported="false" />
+        <activity
+            android:name=".WEBVIEW_PAGE.webviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PRAYER_PAGE.ppathShowdetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PRAYER_PAGE.ppathActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PRAYER_PAGE.PrayerPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NOTE_PAGE.WriteNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NOTE_PAGE.NotePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LOCKAPPS_PAGE.lockAppsListactivity"
+            android:exported="false" />
+        <activity
+            android:name=".proflileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".LOCKAPPS_PAGE.LockService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+        <service
+            android:name=".ScreenOverlayFLoatingWidget.MyFloatingWindowService"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+
+</manifest>
